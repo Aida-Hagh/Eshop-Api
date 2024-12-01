@@ -15,6 +15,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\..\..\Common\Common.AspNetCor\Common.AspNetCor.csproj" />
     <ProjectReference Include="..\..\Shop.Config\Shop.Config.csproj" />
   </ItemGroup>
 

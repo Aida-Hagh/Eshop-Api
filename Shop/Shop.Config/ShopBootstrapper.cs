@@ -13,6 +13,7 @@ using Shop.Application.Roles.Create;
 using FluentValidation;
 using MediatR;
 using Shop.Application.Sellers;
+using Shop.Presentation.Facade;
 
 
 namespace Shop.Config;
@@ -41,7 +42,7 @@ public static class ShopBootstrapper
 
         services.AddValidatorsFromAssembly(typeof(CreateRoleCommandValidator).Assembly);
 
-        //services.InitFacadeDependency();
+       services.InitFacadeDependency();
     }
 }
 
