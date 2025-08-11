@@ -29,7 +29,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Shop.Presentation.Facade", 
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Shop.Api", "Shop\EndPoints\Shop.Api\Shop.Api.csproj", "{6ED2C21B-3AE2-4563-AAFB-2DC38CA29523}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Common.AspNetCor", "Common\Common.AspNetCor\Common.AspNetCor.csproj", "{A4A93D88-DD8D-4BBE-91C5-F60C34EBE3CC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Common.AspNetCor", "Common\Common.AspNetCor\Common.AspNetCor.csproj", "{A4A93D88-DD8D-4BBE-91C5-F60C34EBE3CC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Common.CacheHelper", "Common\Common.CacheHelper\Common.CacheHelper.csproj", "{90BC33B2-747B-40D7-923C-8E14F04811C3}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -81,6 +83,10 @@ Global
 		{A4A93D88-DD8D-4BBE-91C5-F60C34EBE3CC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A4A93D88-DD8D-4BBE-91C5-F60C34EBE3CC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A4A93D88-DD8D-4BBE-91C5-F60C34EBE3CC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{90BC33B2-747B-40D7-923C-8E14F04811C3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{90BC33B2-747B-40D7-923C-8E14F04811C3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{90BC33B2-747B-40D7-923C-8E14F04811C3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{90BC33B2-747B-40D7-923C-8E14F04811C3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -98,6 +104,7 @@ Global
 		{87718521-311C-43EA-804A-10FD889D5157} = {CBC35FC3-A776-49AD-947B-BD59EDCE4685}
 		{6ED2C21B-3AE2-4563-AAFB-2DC38CA29523} = {D5E7BA19-C175-467E-84AF-AF6027461DBE}
 		{A4A93D88-DD8D-4BBE-91C5-F60C34EBE3CC} = {C673D051-BE51-40C3-8182-6CEC80A83B34}
+		{90BC33B2-747B-40D7-923C-8E14F04811C3} = {C673D051-BE51-40C3-8182-6CEC80A83B34}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {BB29703D-C791-4069-9578-E9A225D1F2DD}

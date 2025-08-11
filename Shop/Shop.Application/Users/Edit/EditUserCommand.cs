@@ -14,14 +14,13 @@ namespace Shop.Application.Users.Edit
     public class EditUserCommand : IBaseCommand
     {
         public EditUserCommand(long userId, string name, string family,
-            string phoneNumber, string email, string password, IFormFile? avatarName, Gender gender)
+            string phoneNumber, string email, IFormFile? avatarName, Gender gender)
         {
             UserId = userId;
             Name = name;
             Family = family;
             PhoneNumber = phoneNumber;
             Email = email;
-            Password = password;
             AvatarName = avatarName;
             Gender = gender;
         }
@@ -31,7 +30,6 @@ namespace Shop.Application.Users.Edit
         public string Family { get; private set; }
         public string PhoneNumber { get; private set; }
         public string Email { get; private set; }
-        public string Password { get; private set; }
         public IFormFile? AvatarName { get; set; }
         public Gender Gender { get; private set; }
     }

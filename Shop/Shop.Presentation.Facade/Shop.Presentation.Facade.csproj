@@ -7,6 +7,8 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\..\Common\Common.AspNetCor\Common.AspNetCor.csproj" />
+    <ProjectReference Include="..\..\Common\Common.CacheHelper\Common.CacheHelper.csproj" />
     <ProjectReference Include="..\Shop.Application\Shop.Application.csproj" />
     <ProjectReference Include="..\Shop.Query\Shop.Query.csproj" />
   </ItemGroup>

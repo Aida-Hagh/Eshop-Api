@@ -10,11 +10,7 @@ using Shop.Presentation.Facade.SiteEntities.Banners;
 using Shop.Presentation.Facade.SiteEntities.Sliders;
 using Shop.Presentation.Facade.Users.Addresses;
 using Shop.Presentation.Facade.Users;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+
 
 namespace Shop.Presentation.Facade;
 

@@ -11,20 +11,20 @@ namespace Shop.Application.Products.Create;
 
 public class CreateProductCommand : IBaseCommand
 {
-    public CreateProductCommand(string title, IFormFile imageFile, string description,
-        long categoryId, long subCategoryId, long secondarySubCategoryId, string slug,
-        SeoData seoData, Dictionary<string, string> specifications)
-    {
-        Title = title;
-        ImageFile = imageFile;
-        Description = description;
-        CategoryId = categoryId;
-        SubCategoryId = subCategoryId;
-        SecondarySubCategoryId = secondarySubCategoryId;
-        Slug = slug;
-        SeoData = seoData;
-        Specifications = specifications;
-    }
+    //public CreateProductCommand(string title, IFormFile imageFile, string description,
+    //    long categoryId, long subCategoryId, long secondarySubCategoryId, string slug,
+    //    SeoData seoData, Dictionary<string, string> specifications)
+    //{
+    //    Title = title;
+    //    ImageFile = imageFile;
+    //    Description = description;
+    //    CategoryId = categoryId;
+    //    SubCategoryId = subCategoryId;
+    //    SecondarySubCategoryId = secondarySubCategoryId;
+    //    Slug = slug;
+    //    SeoData = seoData;
+    //    Specifications = specifications;
+    //}
 
     public string Title { get; set; }
     public IFormFile ImageFile { get; set; }

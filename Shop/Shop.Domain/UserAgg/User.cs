@@ -128,26 +128,26 @@ public class User : AggregateRoot
         Roles.AddRange(roles);
     }
 
-    //public void AddToken(string hashJwtToken, string hashRefreshToken, DateTime tokenExpireDate, DateTime refreshTokenExpireDate, string device)
-    //{
-    //    var activeTokenCount = Tokens.Count(c => c.RefreshTokenExpireDate > DateTime.Now);
-    //    if (activeTokenCount == 3)
-    //        throw new InvalidDomainDataException("امکان استفاده از 4 دستگاه همزمان وجود ندارد");
+    public void AddToken(string hashJwtToken, string hashRefreshToken, DateTime tokenExpireDate, DateTime refreshTokenExpireDate, string device)
+    {
+        var activeTokenCount = Tokens.Count(c => c.RefreshTokenExpireDate > DateTime.Now);
+        if (activeTokenCount == 3)
+            throw new InvalidDomainDataException("امکان استفاده از 4 دستگاه همزمان وجود ندارد");
 
-    //    var token = new UserToken(hashJwtToken, hashRefreshToken, tokenExpireDate, refreshTokenExpireDate, device);
-    //    token.UserId = Id;
-    //    Tokens.Add(token);
-    //}
+        var token = new UserToken(hashJwtToken, hashRefreshToken, tokenExpireDate, refreshTokenExpireDate, device);
+        token.UserId = Id;
+        Tokens.Add(token);
+    }
 
-    //public string RemoveToken(long tokenId)
-    //{
-    //    var token = Tokens.FirstOrDefault(f => f.Id == tokenId);
-    //    if (token == null)
-    //        throw new InvalidDomainDataException("invalid TokenId");
+    public string RemoveToken(long tokenId)
+    {
+        var token = Tokens.FirstOrDefault(f => f.Id == tokenId);
+        if (token == null)
+            throw new InvalidDomainDataException("invalid TokenId");
 
-    //    Tokens.Remove(token);
-    //    return token.HashJwtToken;
-    //}
+        Tokens.Remove(token);
+        return token.HashJwtToken;
+    }
     public void Guard(string phoneNumber, string email, IUserDomainService userDomainService)
     {
         NullOrEmptyDomainDataException.CheckString(phoneNumber, nameof(phoneNumber));
